@@ -26,7 +26,7 @@ class DockerChromeTest {
     @Test
     void test() {
         driver.get("https://www.jenkins.io/");
-        assertThat(driver.getTitle()).contains("Jenkins");
+        assertThat(driver.getTitle()).contains("srinivas");
     }
 
 }
