@@ -17,16 +17,15 @@ class DockerChromeTest {
     void setupTest() {
         driver = wdm.create();
     }
-
-    @AfterEach
-    void teardown() {
-        wdm.quit();
-    }
-
     @Test
     void test() {
         driver.get("https://www.jenkins.io/");
         assertThat(driver.getTitle()).contains("srinivas");
     }
+    @AfterEach
+    void teardown() {
+        wdm.quit();
+    }
+
 
 }
